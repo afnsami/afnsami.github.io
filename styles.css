@@ -2,6 +2,10 @@ h1 {
     color: greenyellow;
 }
 
+p {
+    color: white;
+}
+
 body {
-    background: black;
+    background-color: black;
 }
