@@ -37,12 +37,12 @@ body {
     color: black;
     background-color: bisque;
     text-decoration: none;
-    border: 10px solid black;
+    border: 10px solid white;
     transition: 0.2s;
 }
 
 #social-buttons:hover {
-    border: 10px solid white;
+    border: 10px solid black;
     transition: 0.2s;
 }
 
