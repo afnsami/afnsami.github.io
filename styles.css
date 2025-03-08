@@ -7,15 +7,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
 }
 
 body, html {
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
+    
     font-family: 'Encode Sans', Times, serif;
-
     background-color: rgb(242, 242, 242);
 }
 
@@ -55,7 +54,6 @@ header img {
     gap: 30px;
 }
 
-
 #main {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
@@ -66,14 +64,13 @@ header img {
     padding: 45px;
 }
 
-
 .projectCard {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     width: 400px;
-    height: 350px;
+    height: 400px;
 
     border-radius: 9px;
     background-color: white;
@@ -84,14 +81,14 @@ header img {
 .projectCard img {
     width: 400px;
 
-    border: 0px solid white;
-    transition: 0.5s;
+    border: 0px solid var(--blue);
+    border-radius: 9px;
+    transition: 0.3s;
 }
 
 .projectCard img:hover {
-    border: 10px solid white;
-    opacity: 30%;
-    transition: 0.5s;
+    border: 10px solid var(--blue);
+    transition: 0.3s;
 }
 
 #sourceCode {
