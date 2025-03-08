@@ -6,17 +6,14 @@ const sourceCode = document.getElementById("sourceCode");
 
 
 let projects = [
-    ["images/temp.png", "https://youtube.com"],
-    ["images/2.png", "1"],
-    ["images/temp.png", "2"],
-    ["images/2.png", "3"],
-    ["images/temp.png", "httpsd.com"],
-    ["images/temp.png", "httpsd.com"],
-    ["images/temp.png", "httpsd.com"],
-    ["images/temp.png", "httpsd.com"],
-    ["images/temp.png", "httpsd.com"],
-    ["images/temp.png", "httpsd.com"],
-    ["images/temp.png", "httpsd.com"],
+    ["images/library_app.png", "https://afnsami.github.io/library_app"],
+    ["images/admin_dashboard.png", "https://afnsami.github.io/admin_dashboard"],
+    ["images/signup_form.png", "https://afnsami.github.io/signup_form"],
+    ["images/calculator.png", "https://afnsami.github.io/calculator"],
+    ["images/pixel_sketch.png", "https://afnsami.github.io/pixel_sketch/"],
+    ["images/rock_paper_scissors.png", "https://afnsami.github.io/rock_paper_scissors/"],
+    ["images/landing_page.png", "https://afnsami.github.io/odin_landing_page/"],
+    ["images/recipes.png", "https://afnsami.github.io/odin_recipes/"],
 ];
 
 
@@ -37,6 +34,7 @@ for (let p = 0; p < projects.length; p++) {
 
             projectImg.src = projects[p][0];
             imgLink.href = projects[p][1];
+            imgLink.target = "_blank";
         };       
 
        
