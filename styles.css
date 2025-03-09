@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Encode Sans', Times, serif;
 }
 
 body, html {
@@ -14,11 +15,13 @@ body, html {
     height: 100%;
     scroll-behavior: smooth;
     
-    font-family: 'Encode Sans', Times, serif;
     background-color: rgb(242, 242, 242);
 }
 
-header {
+
+
+/*NAVIGATION BAR*/
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,9 +29,8 @@ header {
     top: 0;
 
     width: 100%;
-    min-height: 100px;
-    max-height: 250px;
-    padding: 20px;
+    height: 100px;
+    padding: 0px 20px;
 
     background-color: black;
     color: white;
@@ -36,8 +38,19 @@ header {
     z-index: 999;
 }
 
-header img {
-    width: 10%;
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav img {
+    width: 69px;
+}
+
+#menu-icon {
+    display: none;
 }
 
 #leftInfo {
@@ -49,9 +62,11 @@ header img {
     font-weight: bold;
 }
 
-#rightInfo {
+#websiteName {
     display: flex;
-    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
 }
 
 #main {
@@ -112,4 +127,49 @@ a {
 a:hover {
     color: var(--blue);
     transition: 200ms;
+}
+
+
+@media (max-width: 700px) {
+
+    #websiteName {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        gap: 0;
+
+        overflow: hidden;
+
+        flex-direction: column;
+        align-items: start;
+        background-color: black;
+        transition: all 0.4s;
+    }
+
+    nav ul li {
+        margin-left: 21px;
+        padding: 15px;
+        padding-bottom: 30px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    i {
+        font-size: 27px;
+    }
+
+    #menuList {
+        transition: all 0.4s;
+    }
+
 }
