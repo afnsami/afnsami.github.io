@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8"/>
-        <link name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="styles.css"/>
         <script src="main.js" defer></script>
@@ -11,19 +11,26 @@
 
     <body>
 
-        <header>
+        <nav>
             <div id="leftInfo">
                 <img src="images/afnsami_logo.svg" alt="afnan sami logo">
-                <h3>Afnan Sami</h3>
-                <p style="font-weight: 400; font-size: 21px;">coding projects</p>
-            </div>
 
-            <div id="rightInfo">
-                <a href="https://github.com/afnsami" target="_blank">Github</a>
-                <a href="https://bento.me/anas">Links</a>
-                <a href="mailto:hiafnansami@gmail.com" target="_blank">Contact</a>
-            </div>
-        </header>
+                <div id="websiteName">
+                    <h3>Afnan Sami</h3>
+                    <p style="font-weight: 400; font-size: 21px;">coding projects</p>
+                </div>
+           </div>
+
+
+            <ul id="menuList">
+                <li><a href="https://github.com/afnsami" target="_blank">Github</a></li>
+                <li><a href=">https://bento.me/anas" target="_blank">Links</a></li>
+                <li><a href="mailto:hiafnansami@gmail.com" target="_blank">Contact</a></li>
+            </ul>
+
+            <i id="menu-icon" class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+        </nav>
 
         <div id="main">
         </div>
