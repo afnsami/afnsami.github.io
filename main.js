@@ -41,3 +41,16 @@ for (let p = 0; p < projects.length; p++) {
         imgLink.append(projectImg);
         newDiv.append(imgLink);
 };
+
+
+//Navigation Icon Action
+let menuList = document.getElementById("menuList");
+menuList.style.maxHeight = "0px";
+
+function toggleMenu() {
+    if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "300px";
+    } else {
+        menuList.style.maxHeight = "0px";
+    }
+}
