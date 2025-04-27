@@ -20,23 +20,17 @@ let projects = [
 
 //for (x in projects) {
 for (let p = 0; p < projects.length; p++) {
-
+    
         let newDiv = document.createElement("div");
         newDiv.className = "projectCard";
         main.appendChild(newDiv);
 
-
         let imgLink = document.createElement("a");
         let projectImg = document.createElement("img");
 
-
-        for (let j = 0; j < projects.length; j++) {
-
-            projectImg.src = projects[p][0];
-            imgLink.href = projects[p][1];
-            imgLink.target = "_blank";
-        };       
-
+        projectImg.src = projects[p][0];
+        imgLink.href = projects[p][1];
+        imgLink.target = "_blank";
        
         imgLink.append(projectImg);
         newDiv.append(imgLink);
