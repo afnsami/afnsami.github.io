@@ -103,7 +103,7 @@ nav img {
 }
 
 .projectCard img:hover {
-    border: 10px solid var(--blue);
+    border: 6px solid var(--blue);
     transition: 0.3s;
 }
 
