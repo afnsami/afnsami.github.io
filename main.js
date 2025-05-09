@@ -14,11 +14,11 @@ let projects = [
     ["images/rock_paper_scissors.png", "https://afnsami.github.io/rock_paper_scissors/"],
     ["images/landing_page.png", "https://afnsami.github.io/odin_landing_page/"],
     ["images/recipes.png", "https://afnsami.github.io/odin_recipes/"],
+    ["images/cursed_farmer.png", "https://github.com/afnsami/CursedFarmer"],
 ];
 
 
 
-//for (x in projects) {
 for (let p = 0; p < projects.length; p++) {
     
         let newDiv = document.createElement("div");
