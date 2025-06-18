@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
 :root {
     --blue: #044affff;
+    --navText: black;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Encode Sans', Times, serif;
 }
 
 body, html {
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
-    
+
+    font-family: 'Encode Sans', 'Times New Roman', Times, serif;
     background-color: rgb(242, 242, 242);
 }
 
@@ -29,12 +30,15 @@ nav {
     top: 0;
 
     width: 100%;
-    height: 100px;
+    height: 72px;
     padding: 0px 20px;
 
-    background-color: black;
-    color: white;
+    backdrop-filter: blur(21px);
 
+    background-color: rgb(255 255 255 / 30%);
+    border-bottom: solid 1px black;
+
+    color: var(--navText);
     z-index: 999;
 }
 
@@ -46,7 +50,7 @@ nav ul {
 }
 
 nav img {
-    width: 55px;
+    width: 45px;
 }
 
 #menu-icon {
@@ -122,34 +126,26 @@ nav img {
 a {
     transition: 200ms;
     text-decoration: none;
-    color: white;
+    color: var(--navText);
 }
 
 a:hover {
+    text-decoration: underline;
     color: var(--blue);
     transition: 200ms;
 }
 
 
+/* MOBILE SIZE */
 @media (max-width: 700px) {
 
+    /*Navigation Bar*/
     nav img {
-        width: 63px;
-    }
-
-    #main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 45px;
     }
 
     #leftInfo p {
-        font-size: 5px;
-    }
-
-    .projectCard, .projectCard img {
-        width: 360px;
-        height: 360px;
+        font-size: 16px;
     }
 
     #websiteName {
@@ -160,36 +156,57 @@ a:hover {
     }
 
     nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
         position: absolute;
-        top: 100px;
+        top: 72px;
         left: 0;
         right: 0;
         gap: 0;
 
         overflow: hidden;
-
-        flex-direction: column;
-        align-items: start;
+        
         background-color: black;
         transition: all 0.4s;
     }
 
     nav ul li {
         margin-left: 21px;
-        padding: 15px;
-        padding-bottom: 30px;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    nav a {
+        color: white;
+    }
+
+
+
+    /*Main Div*/
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectCard, .projectCard img {
+        width: 360px;
+        height: 360px;
+    }
+
+    /*SVG*/
+    i {
+        font-size: 27px;
     }
 
     #menu-icon {
         display: block;
     }
 
-    i {
-        font-size: 27px;
-    }
-
     #menuList {
         transition: all 0.4s;
     }
-
 }
