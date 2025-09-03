@@ -189,11 +189,12 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .projectCard, .projectCard img {
-        width: 360px;
-        height: 360px;
+        width: 100%;
+        height: 100%;
     }
 
     /*SVG*/
