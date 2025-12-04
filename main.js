@@ -6,14 +6,14 @@ const sourceCode = document.getElementById("sourceCode");
 
 
 let projects = [
-    ["images/library_app.png", "https://afnsami.github.io/library_app"],
-    ["images/admin_dashboard.png", "https://afnsami.github.io/admin_dashboard"],
-    ["images/signup_form.png", "https://afnsami.github.io/signup_form"],
+    ["images/library_app.png", "https://afnsami.github.io/library-app"],
+    ["images/admin_dashboard.png", "https://afnsami.github.io/admin-dashboard"],
+    ["images/signup_form.png", "https://afnsami.github.io/signup-form"],
     ["images/calculator.png", "https://afnsami.github.io/calculator"],
-    ["images/pixel_sketch.png", "https://afnsami.github.io/pixel_sketch/"],
-    ["images/rock_paper_scissors.png", "https://afnsami.github.io/rock_paper_scissors/"],
-    ["images/landing_page.png", "https://afnsami.github.io/odin_landing_page/"],
-    ["images/recipes.png", "https://afnsami.github.io/odin_recipes/"],
+    ["images/pixel_sketch.png", "https://afnsami.github.io/pixel-sketch/"],
+    ["images/rock_paper_scissors.png", "https://afnsami.github.io/rock-paper-scissors/"],
+    ["images/landing_page.png", "https://afnsami.github.io/odin-landing-page/"],
+    ["images/recipes.png", "https://afnsami.github.io/odin-recipes/"],
     ["images/cursed_farmer.png", "https://github.com/afnsami/CursedFarmer"],
 ];
 
