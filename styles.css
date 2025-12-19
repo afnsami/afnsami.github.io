@@ -89,6 +89,7 @@ nav img {
 
     width: 400px;
     height: 400px;
+    margin-bottom: 80px;
 
     border-radius: 9px;
     background-color: white;
@@ -126,6 +127,11 @@ a {
     transition: 200ms;
     text-decoration: none;
     color: var(--navText);
+}
+
+.projectTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 a:hover {
