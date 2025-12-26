@@ -89,7 +89,7 @@ nav img {
 
     width: 400px;
     height: 400px;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 
     border-radius: 9px;
     background-color: white;
@@ -111,6 +111,16 @@ nav img {
     transition: 0.3s;
 }
 
+.projectTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.projectInfo {
+    color: rgb(100, 100, 100);
+}
+
+
 #sourceCode {
     display: flex;
     align-items: center;
@@ -127,11 +137,6 @@ a {
     transition: 200ms;
     text-decoration: none;
     color: var(--navText);
-}
-
-.projectTitle {
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 a:hover {
