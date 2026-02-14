@@ -49,6 +49,10 @@ nav ul {
     list-style-type: none;
 }
 
+nav ul li a {
+    color: var(--blue);
+}
+
 nav img {
     width: 45px;
 }
