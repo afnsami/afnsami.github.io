@@ -2,6 +2,7 @@
 const main = document.getElementById("main");
 const projectCard = document.getElementsByClassName("projectsCard");
 const sourceCode = document.getElementById("sourceCode");
+const menuIcon = document.getElementById("menu-icon");
 
 
 
@@ -92,7 +93,11 @@ menuList.style.maxHeight = "0px";
 function toggleMenu() {
     if (menuList.style.maxHeight == "0px") {
         menuList.style.maxHeight = "300px";
+        menuIcon.style.transform = "rotate(90deg)";
+        menuIcon.style.transition = "0.3s";
     } else {
         menuList.style.maxHeight = "0px";
+        menuIcon.style.transform = "rotate(0deg)";
+        menuIcon.style.transition = "0.3s";
     }
 }
