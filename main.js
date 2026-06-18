@@ -7,6 +7,11 @@ const menuIcon = document.getElementById("menu-icon");
 
 
 let projects = [
+    ["Tic Tac Toe",
+        "A browser based tic tac toe game against A.I.",
+        "images/tictactoe.png",
+        "https://afnsami.github.io/tictactoe",
+    ],
     ["Book Library", 
         "A library to store book lists", 
         "images/library_app.png", 
